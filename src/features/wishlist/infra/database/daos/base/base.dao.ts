@@ -1,4 +1,4 @@
-import { IBase } from "../interfaces/base.interface";
+import { IBase } from "../interfaces/IBase.interface";
 import { inject, injectable } from "inversify";
 import { Dao, Scope} from '@heronjs/common';
 
