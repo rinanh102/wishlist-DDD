@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\CBI\.node\corepack\yarn\1.22.15\bin\yarn.js migrate:latest
+  C:\Program Files\nodejs\node.exe C:\Users\CBI\.node\corepack\yarn\1.22.15\bin\yarn.js add @heronjs/core
 
 PATH: 
   C:\Users\CBI\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\CBI\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\CBI\AppData\Local\Microsoft\WindowsApps;C:\Users\CBI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\CBI\AppData\Roaming\npm;C:\Users\CBI\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -57,8 +57,8 @@ npm manifest:
       "typescript": "^4.2.4"
     },
     "dependencies": {
-      "@heronjs/core": "^2.0.0",
       "@heronjs/common": "^2.0.0",
+      "@heronjs/core": "^2.0.0",
       "@heronjs/express": "^2.0.0",
       "cache-manager": "^3.4.4",
       "cache-manager-ioredis": "^2.1.0",
@@ -69,6 +69,7 @@ npm manifest:
       "http-status-codes": "^2.1.4",
       "ioredis": "^4.27.8",
       "module-alias": "^2.2.2",
+      "pg": "^8.7.3",
       "progress": "^2.0.3",
       "reflect-metadata": "^0.1.13",
       "rxjs": "^7.1.0",

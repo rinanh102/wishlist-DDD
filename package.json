@@ -30,9 +30,9 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@heronjs/common": "^2.0.0",
-    "@heronjs/core": "^2.0.0",
-    "@heronjs/express": "^2.0.0",
+    "@heronjs/common": "^2.3.9",
+    "@heronjs/core": "^2.2.4",
+    "@heronjs/express": "^2.1.1",
     "cache-manager": "^3.4.4",
     "cache-manager-ioredis": "^2.1.0",
     "class-validator": "^0.13.1",

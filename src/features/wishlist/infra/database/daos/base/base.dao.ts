@@ -1,5 +1,4 @@
 import { IBase } from "../interfaces/IBase.interface";
-import { inject, injectable } from "inversify";
 import { Dao, Scope} from '@heronjs/common';
 
 
@@ -7,9 +6,7 @@ import { Dao, Scope} from '@heronjs/common';
     token: 'base.dao',
     scope: Scope.SINGLETON
 })
-@injectable()
 export abstract class BaseDAO<T> implements IBase<T> {
-
 
 
     create(item: T): Promise<boolean> {

@@ -1,20 +1,19 @@
 import { WishlistModel } from "../aggregates";
 import { IWishlistRepo } from "./interfaces/IWishlistRepo.interface";
-import { inject, injectable } from "inversify";
-import { WishlistDAO } from "src/infra/database/daos";
-import { TYPES } from "src/features/core/types.core";
-import { IWishlistDAO } from "src/infra/database/daos/interfaces/IWishlistdao.interface";
+import { IWishlistDAO } from "../../infra/database/daos/interfaces/IWishlistdao.interface";
+import { Inject, Repository, Scope } from "@heronjs/common";
+import { TOKENS } from "src/contants";
 
 
-
-@injectable()
+@Repository({
+    token: 'wishlist.repository',
+    scope: Scope.SINGLETON,
+})
 export class WishlistRepo implements IWishlistRepo {
-    private _wishlistDao: IWishlistDAO;
 
     public constructor(
-        @inject(TYPES.WishlistDAO) private readonly wishlistDao: IWishlistDAO
+        @Inject(TOKENS.WishlistDAO) private readonly _wishlistDao: IWishlistDAO
     ) {
-        this._wishlistDao = wishlistDao;
     }
 
     getWishlistByUserId(user_id: string): Promise<WishlistModel[]> {
@@ -27,8 +26,8 @@ export class WishlistRepo implements IWishlistRepo {
         throw new Error("Method not implemented.");
     }
 
-    findAll() {
-        return this._wishlistDao.findAll();
+    public findAll() {
+        return this._wishlistDao.getWishlistByUserIdMock();
     }
 
 }

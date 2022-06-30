@@ -1,1 +1,1 @@
-export * from './get-list-wishlist.usecase'
+export * from './wishlistOuput.type';

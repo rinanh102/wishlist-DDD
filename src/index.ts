@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { HeronJS } from "@heronjs/core";
 import { AppModule } from "./app.module";
 
